@@ -1,0 +1,242 @@
+html{
+    -webkit-appearance:none;   
+}
+body {
+    background: #fff;
+    color: #222;
+}
+.header{
+    display:block;
+    margin-top:0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.topNavLeft{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+    float:left;
+    position:relative;
+    top:15px;
+
+}
+.about{
+    margin:0px 0px 0px 15px;
+    padding:0;
+    font-size:13px;
+    font-family:'arial', 'serif sans';
+}
+.store{
+    margin:0px 0px 0px 15px;
+    padding:0;
+    font-family:'arial', 'serif sans';
+    font-size:13px;
+}
+li{
+    display: inline;
+    text-align: center;
+}
+.topNavRight{
+    list-style-type: none;
+    margin: 0;
+    float:right;
+    padding: 0;
+    overflow: hidden;
+}
+.gmail{
+    padding:0;
+    margin:0px 0px 0px 15px;
+    font-size:13px;
+    font-family:'arial', 'serif sans';
+}
+.images{
+    padding:0;
+    font-size:13px;
+    font-family:'arial', 'serif sans';
+    margin:0px 0px 0px 15px;
+}
+.apps{        
+    padding:0;
+    margin:10px 10px 10px;
+}
+#sign_in{
+    border-radius:100%;
+    margin-top:5px;
+    
+}
+a:link{
+    text-decoration: none;
+    color: black;
+}
+a:visited{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: underline;
+}
+a:active{
+    text-decoration: underline;
+}
+#logo_div{
+    position:relative;
+    top:40px;
+    display:block;
+    margin-left:auto;
+    margin-right: auto;
+    width:50%
+}
+.logo{
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+    padding-top:109px;
+}
+.search_div{
+    position:relative;
+    top:65px;
+}
+.searchbar{
+    padding:0px 0px 0px 0px;
+    text-align: center;
+    align-content: center;
+    display:flex;
+    border-radius:24px;
+    border:1px;
+    border-style: solid;
+    border-color:rgb(204, 201, 196);
+    width:480px;
+    height:44px;
+    margin:auto;
+    box-shadow:none;
+    background:#fff;
+    margin-left:auto;
+    margin-right:auto;
+}
+#searchIconBox{
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-top: 12px;
+    width: 24px;
+    height: 24px;
+}
+.lens{
+    padding: 20 20;
+    width:20px;
+    height:20px;
+    fill:rgb(179, 179, 179);
+    line-height:20px;
+}
+#searchTextBox{
+    width: 388px;
+    line-height: 24px;
+    height: 24px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+#searchText {
+    display: inline-block;
+    border: none;
+    color: rgba(0,0,0,.87);
+    outline: none;
+    font: 16px arial, sans-serif;
+    -webkit-tap-highlight-color: transparent;
+    background-color: transparent;
+    width: 388px;
+}
+#searchMic{
+    margin-top: 10px;
+    padding-right: 0px;
+}
+.micro{
+    padding: 20 20;
+    width:24px;
+    height:24px;
+    
+}
+.buttons_div{
+    position:relative;
+    top:75px;   
+}
+#foot{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #F2F2F3;
+    border-top: 1px #e4e4e4 solid;
+    padding: 10px 10px;
+}
+.div_country{
+    margin-left: -320px;
+    margin-right:700px;
+    margin-bottom: 15px;
+    color: #5F6368;
+}
+.country{ 
+    position:relative;
+    left: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+.navBarsBottom{
+    position: relative;
+    background-color: rgb(235, 235, 235);
+    border-top: 1px #e4e4e4 solid;
+    border-bottom: 1px #e4e4e4 solid;
+    
+}
+.bottomNavLeft{
+    list-style-type:none;
+    margin-top:10px;
+    margin-bottom:10px;
+    padding: 0;
+    float:left;
+    font-size: 13px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.bottomNavRight{
+    float: right;
+    padding: 0;
+    margin-top:10px;
+    margin-bottom:10px;
+    font-size: 13px;
+    list-style-type: none;
+    font-family:Arial, Helvetica, sans-serif;
+}
+#Advertising{
+    margin:5px 10px;
+    padding:5px 5px 5px 5px;
+
+}
+#Business{
+    margin:5px 10px;
+    padding:5px 5px 5px 5px;
+}
+#howsearchworks{
+    margin:5px 10px;
+    padding:5px 5px 5px 5px;
+}        
+#Privacy{
+    margin:5px 10px;
+    padding:5px 5px 5px 5px;
+}
+#Terms{
+    margin:5px 10px;
+    padding:5px 5px 5px 5px;
+}
+#Settings{
+    margin:5px 10px;
+    padding:5px 5px 5px 5px;
+}
