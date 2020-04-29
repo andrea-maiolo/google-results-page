@@ -1,359 +1,278 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="test.css">
-        <link rel="stylesheet" href="reset.css">
-        <title>Search results</title>
-    </head>
-    <body>
-    <header class="header">
-        <div id ="topHead">
-            <img id= 'logo' alt='google_logo' src='https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png'>
-            <div id="searchbar">
-                <div class="searchIconBox">
-                    <svg id="lens" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
-                    </svg>
-                </div>
-                <div id="searchTextBox">
-                    <form action="/action_page.php">
-                        <input id="searchText" type="text" name="search" placeholder="Build this webpage">
-                    </form>
-                </div>
-                <div id="mic">
-                <img alt="voice search" class="micro" src="pic/micro.png">
-                </div>
-            </div>                  
-                <ul id='userOptions'>
-                    <li id="apps"><a href="https://www.google.com/intl/en/about/products?tab=wh"><img src="pic/apps.png" height="15px"></a></li>
-                    <li><img id="sign_in" alt="user_logo" src="https://lh3.googleusercontent.com/-ap0cTZ2hI60/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rdvBQsY3au54TAsFU-wQwgP7DgS4A.CMID/s32-c/photo.jpg"></li>
-                </ul>
-       </div>
-        <div id="secondHead">
-            <ul id='searchFor'>
-                <a href="" id="all"><li>all</li></a>      
-                <a href="" id="maps"><li>maps</li></a>   
-                <a href="" id="news"><li>news</li></a>
-                <a href="" id="videos"><li>videos</li></a>
-                <a href="" id="shopping"><li>shopping</li></a>
-                <a href="" id="more"><li>...more</li></a>
-            </ul>
-            <ul id='settingsTools'>
-                <li id="settings">settings</li>
-                <li id="tools">tools</li>
-            </ul> 
-        </div>
-    </header>
-               
-               
-     <main>
-        <div class="result">
-            <p class="searchInfo">About a trilion results! (0.57 seconds)</p>
-        </div>
 
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="HandheldFriendly" content="true">
+	<link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+	<header>
+		<div id="head">
+			<img id='logo' alt='google_logo' src='https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png'>
+			<div id="searchbar">
+				<svg id="lens" focusable="false" xmlns="http://www.w3.org/2000/svg">
+					<path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+				</svg>
+				<form id="form" action="/action_page.php">
+					<input id="searchText" type="text" name="search" placeholder="Build this webpage">
+				</form>
+				<img alt="voice search" id="micro" src="pic/micro.png">
+			</div>
+			<a id="apps" href="https://www.google.com/intl/en/about/products?tab=wh"><img src="pic/apps.png" height="15px"></a>
+			<img id="sign_in" id="sign_in" alt="user_logo" src="https://lh3.googleusercontent.com/-ap0cTZ2hI60/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rdvBQsY3au54TAsFU-wQwgP7DgS4A.CMID/s32-c/photo.jpg">
+			<ul id='searchFor'>
+				<a href="" id="all"><svg id="allSVG" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+						<path d="M10 2v2a6 6 0 0 1 6 6h2a8 8 0 0 0-8-8z" fill="#34A853"></path>
+						<path d="M10 4V2a8 8 0 0 0-8 8h2c0-3.3 2.7-6 6-6z" fill="#EA4335"></path>
+						<path d="M4 10H2a8 8 0 0 0 8 8v-2c-3.3 0-6-2.69-6-6z" fill="#FBBC04"></path>
+						<path d="M22 20.59l-5.69-5.69A7.96 7.96 0 0 0 18 10h-2a6 6 0 0 1-6 6v2c1.85 0 3.52-.64 4.88-1.68l5.69 5.69L22 20.59z" fill="#4285F4"></path>
+					</svg>
+					<li>All</li>
+				</a>
+				<a href="" id="maps"><svg id="mapsSVG" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+						<path d="M7.50302273,-6.81818182e-05 C10.5930227,-6.81818182e-05 13.0052955,2.48720455 13.0052955,5.42720455 C13.0052955,7.76379545 11.8748409,9.12061364 10.7443864,10.4774318 C10.2909773,11.0051591 9.83893182,11.6078864 9.38688636,12.2112955 C8.93484091,12.8140227 8.63347727,13.7187955 8.40711364,14.1708409 C8.18143182,14.6228864 8.03006818,14.9999318 7.50302273,14.9999318 C6.97461364,14.9999318 6.82461364,14.6228864 6.59825,14.1708409 C6.37188636,13.7187955 6.07052273,12.8140227 5.61847727,12.2112955 C5.16575,11.6078864 4.71370455,11.0051591 4.26165909,10.4774318 C3.13120455,9.12061364 2.00006818,7.76379545 2.00006818,5.42720455 C2.00006818,2.48720455 4.41165909,-6.81818182e-05 7.50302273,-6.81818182e-05 Z M7.50302273,1.36356818 C5.22029545,1.36356818 3.36370455,3.18606818 3.36370455,5.42720455 C3.36370455,7.27015909 4.22211364,8.29970455 5.30893182,9.60402273 C5.77734091,10.1508409 6.25120455,10.7822045 6.70938636,11.3931136 C7.04893182,11.8458409 7.30461364,12.3831136 7.50302273,12.8378864 C7.70075,12.3831136 7.95643182,11.8458409 8.29597727,11.3931136 C8.75484091,10.7822045 9.22734091,10.1508409 9.70870455,9.58970455 C10.7825682,8.29970455 11.6416591,7.27015909 11.6416591,5.42720455 C11.6416591,3.18606818 9.78438636,1.36356818 7.50302273,1.36356818 Z M7.50275,4.09793182 C8.23638636,4.09793182 8.83161364,4.69315909 8.83161364,5.42679545 C8.83161364,6.16111364 8.23638636,6.75634091 7.50275,6.75634091 C6.76843182,6.75634091 6.17320455,6.16111364 6.17320455,5.42679545 C6.17320455,4.69315909 6.76843182,4.09793182 7.50275,4.09793182 Z"></path>
+					</svg>
+					<li>Maps</li>
+				</a>
+				<a href="" id="news"><svg id="newsSVG" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+						<path d="M12 11h6v2h-6v-2zm-6 6h12v-2H6v2zm0-4h4V7H6v6zm16-7.22v12.44c0 1.54-1.34 2.78-3 2.78H5c-1.64 0-3-1.25-3-2.78V5.78C2 4.26 3.36 3 5 3h14c1.64 0 3 1.25 3 2.78zM19.99 12V5.78c0-.42-.46-.78-1-.78H5c-.54 0-1 .36-1 .78v12.44c0 .42.46.78 1 .78h14c.54 0 1-.36 1-.78V12zM12 9h6V7h-6v2z"></path>
+					</svg>
+					<li>News</li>
+				</a>
+				<a href="" id="videos"><svg id="videosSVG" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+						<path clip-rule="evenodd" d="M10 16.5l6-4.5-6-4.5v9zM5 20h14a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1zm14.5 2H5a3 3 0 0 1-3-3V4.4A2.4 2.4 0 0 1 4.4 2h15.2A2.4 2.4 0 0 1 22 4.4v15.1a2.5 2.5 0 0 1-2.5 2.5z" fill-rule="evenodd"></path>
+					</svg>
+					<li>Videos</li>
+				</a>
+				<a href="" id="immages"><svg id="immagesSVG" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+						<path d="M14 13l4 5H6l4-4 1.79 1.78L14 13zm-6.01-2.99A2 2 0 0 0 8 6a2 2 0 0 0-.01 4.01zM22 5v14a3 3 0 0 1-3 2.99H5c-1.64 0-3-1.36-3-3V5c0-1.64 1.36-3 3-3h14c1.65 0 3 1.36 3 3zm-2.01 0a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h7v-.01h7a1 1 0 0 0 1-1V5z"></path>
+					</svg>
+					<li>Immages</li>
+				</a>
+				<a href="" id="more"><svg id="moreSVG" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+						<path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
+					</svg>
+					<li>More</li>
+				</a>
+				<a href="" id="settings">
+					<li>Settings</li>
+				</a>
+				<a href="" id="tools">
+					<li>Tools</li>
+				</a>
+			</ul>
+		</div>
+	</header>
+	<main>
+		<p id="searchInfo">About a trillion results! (0.57 seconds)</p>
+		<div id="paidAds">
+			<h2 id=h2ad1><span id="spanad1">Ad·</span>www.shopify.com/‎</h2>
+			<h1><a href="#" id="h1ad1">Ecommerce Website Builder | Start a 14 Day Free Trial Now</a></h1>
+			<p id="pad1">Everything You Need To Start Selling Online Today. SEO Optimized.<br>
+				Mobile Commerce Ready. Unlimited 24/7 Support. SSL Certificate.
+			</p>
+			<h2 id="h2ad2"><span id="spanad2">Ad·</span>top5-websitebuilders.com/</h2>
+			<h1><a href="#" id="h1ad2">5 Best Website Builders (2020) | Build Your Website in 3 Steps‎</a></h1>
+			<p id="pad2">2020 User's Choice. Customizable Online Store. Drag & Drop Editor.<br>
+				Top Deals In One Place! It's Easy. Customizable Templates.
+			</p>
+		</div>
+		<div id="first2Results">
+			<h2 id="h2result1"><span>https://www.website.com</span></h2>
+			<h1><a href="#" id="h1result1">Create Your Website for Free | Free Site Builder | Website.com</a></h1>
+			<p id="presult1">Create a professional website for free with the Website.com website builder.<br>
+				Domain names, web hosting, website templates, and ecommerce solutions...
+			</p>
+			<h2 id="h2result2"><span>https://www.webnode.com</span></h2>
+			<h1><a href="#" id="h1result2">Webnode: Create a free website easily | Free website builder</a></h1>
+			<p id="presult2">You can create and own your website for free for unlimited time.<br>
+				Make a website at Webnode in a matter of minutes!
+			</p>
+		</div>
+		<div id="videoContainer">
+			<h3>Videos</h3>
+			<div id="video1">
+				<img src="pic/howto2.png" width="203px">
+				<a id="av1" href="#">How to Make a Website in 10 mins - Simple &amp; Easy</a>
+				<p id="p1v1">Website Learners</p>
+				<p id="p2v1">Youtube - Jan 3, 2018</p>
+			</div>
+			<div id="video2">
+				<img src="pic/wix.png" width="203px">
+				<a id="av2" href="#">How to Make a WEBSITE for FREE!</a>
+				<p id="p1v2">Blue Lightning Tv</p>
+				<p id="p2v2">Youtube - Nov 23, 2016</p>
+			</div>
+			<div id="video3">
+				<img src="pic/create.png" width="203px">
+				<a id="av3" href="#">How To Create A Website For Beginners</a>
+				<p id="p1v3">Create WP Site</p>
+				<p id="p2v3">Youtube - Mar 19, 2016</p>
+			</div>
+		</div>
+		<div id="result345">
+			<h2 id="h2result3">https://www.website.com</h2>
+			<h1><a id="h1result3" href="">Create Your Website for Free | Free Site Builder | Website.com</a></h1>
+			<p id="presult3">Create a professional website for free with the Website.com website builder.<br>
+				Domain names, web hosting, website templates, and ecommerce solutions...
+			</p>
+			<h2 id="h2result4">https://www.webnode.com</h2>
+			<h1><a id="h1result4" href="">Webnode: Create a free website easily | Free website builder</a></h1>
+			<p id="presult4">You can create and own your website for free for unlimited time.<br>
+				Make a website at Webnode in a matter of minutes!
+			</p>
+			<h2 id="h2result5">https://www.wix.com</h2>
+			<h1><a id="h1result5" href="">Wix.com: Free Website Builder | Create a Free Website</a></h1>
+			<p id="presult5">Follow these 6 simple steps to create a website today.<br>
+				Choose what kind of website you want to create
+			</p>
+		</div>
+		<div id="suggestionTable">
+			<div id="containerSug">
+				<div id="sugtop">
+					<h3 id="paa">People also ask</h3>
+				</div>
 
-<!--from here start the main page-->
+				<div class="sug"><a href="#" class="suglink">How can I create a free website?
+						<svg id="expandSVG1" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+							<path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
+						</svg></a>
+				</div>
+				<div class="sug"><a href="#" class="suglink">How do I create a free website on google?
+						<svg id="expandSVG2" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+							<path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
+						</svg></a>
+				</div>
+				<div class="sug"><a href="#" class="suglink">How much does it cost to build a website?
+						<svg id="expandSVG3" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+							<path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
+						</svg></a>
+				</div>
+				<div id="sugbottom"><a href="#" class="suglink">How to do I create website for my business?
+						<svg id="expandSVG4" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+							<path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
+						</svg></a>
+				</div>
+			</div>
+		</div>
+		<div id="result6789">
+			<h2 id="h2result6">https://websitesetup.org</h2>
+			<h1><a id="h1result6" href="">How to Create a Website: Step-by-Step Guide for Beginners (2019)</a></h1>
+			<p id="presult6">Apr 25, 2019 - Learn how to make a website and set it up. This site contains<br>
+				different tutorials on how to build a website using WordPress, Joomla, Drupal...
+			</p>
+			<span id="r7">
+				<h2 id="h2result7">https://www.website.com</h2>
+				<h1><a id="h1result7" href="">Create Your Website for Free | Free Site Builder | Website.com</a></h1>
+				<p id="presult7">Create a professional website for free with the Website.com website builder.<br>
+					Domain names, web hosting, website templates, and ecommerce solutions...
+				</p>
+			</span>
+			<span id="r8">
+				<h2 id="h2result8">https://www.webnode.com</h2>
+				<h1><a id="h1result8" href="">Webnode: Create a free website easily | Free website builder</a></h1>
+				<p id="presult8">You can create and own your website for free for unlimited time.<br>
+					Make a website at Webnode in a matter of minutes!
+				</p>
+			</span>
+			<span id="r9">
+				<h2 id="h2result9">https://www.wix.com</h2>
+				<h1><a id="h1result9" href="">Wix.com: Free Website Builder | Create a Free Website</a></h1>
+				<p id="presult9">Follow these 6 simple steps to create a website today. Sign up for a free!<br>
+					Choose what kind of website you want to create.
+				</p>
+			</span>
+		</div>
+		<div id="relatedSearch">
+			<h3 id="relHeader">Searches related to build this webpage</h3>
+			<div id="relCol1">
+				<p><a id="arel1" href="#">How to create a website on google</a></p>
+				<p><a id="arel2" href="#">How to create a website free of cost</a></p>
+				<p><a id="arel3" href="#">How to create a website pdf</a></p>
+				<p><a id="arel4" href="#">How to create a website using html</a></p>
+			</div>
+			<div id="relCol2">
+				<p><a id="arel5" href="#">How to make your own website for free</a></p>
+				<p><a id="arel6" href="#">Creating a website for your business</a></p>
+				<p><a id="arel7" href="#">Create professional website</a></p>
+				<p><a id="arel8" href="#">Create free website an earn money</a></p>
+			</div>
+		</div>
+		<table id="nextPages">
+			<tbody>
+				<tr>
+					<td>
+						<span id="bigG" class="gooooogle">G</span>
+					</td>
+					<td>
+						<span id="redO">o</span>
+						<a class="gooooogle"><span class="spanNumbers">1</span></a>
+					</td>
+					<td>
+						<span class="yellowO">o</span>
+						<a class="gooooogle"><span class="spanNumbers">2</span></a>
+					</td>
+					<td>
+						<span class="yellowO">o</span>
+						<a class="gooooogle"><span class="spanNumbers">3</span></a>
+					</td>
+					<td>
+						<span class="yellowO">o</span>
+						<a class="gooooogle"><span class="spanNumbers">4</span></a>
+					</td>
+					<td>
+						<span class="yellowO">o</span>
+						<a class="gooooogle"><span class="spanNumbers">5</span></a>
+					</td>
+					<td>
+						<span class="yellowO">o</span>
+						<a class="gooooogle"><span class="spanNumbers">6</span></a>
+					</td>
+					<td>
+						<span class="yellowO">o</span>
+						<a class="gooooogle"><span class="spanNumbers">7</span></a>
+					</td>
+					<td>
+						<span class="yellowO">o</span>
+						<a class="gooooogle"><span class="spanNumbers">8</span></a>
+					</td>
+					<td>
+						<span class="yellowO">o</span>
+						<a class="gooooogle"><span class="spanNumbers">9</span></a>
+					</td>
+					<td>
+						<span class="yellowO">o</span>
+						<a class="gooooogle"><span class="spanNumbers" style="
+                                position: relative;
+                                left: -1px;">10</span></a>
+					</td>
+					<td>
+						<span id="gle"><span id="blueG">g</span><span id="greenL">l</span><span id="redE">e</span></span>
+						<a class="gooooogle"><span id="next">Next</span></a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</main>
+	<footer id="foot">
+		<div id="lastElement">
+			<span id="country">United Kingdom</span>
+			<span class="location">London</span>
+			<span class="location">-</span>
+			<a href="#" style="color:rgba(117, 112, 112, 0.71)" class="location">Learn more</a>
+		</div>
+		<div id="bottomList">
+			<ul>
+				<li><a style="color:rgba(117, 112, 112, 0.71)" href="#">Help</a></li>
+				<li style="position:relative; left:10px;"><a style="color:rgba(117, 112, 112, 0.71)" href="#">Send feedback</a></li>
+				<li style="position:relative; left:20px;"><a style="color:rgba(117, 112, 112, 0.71)" href="#">Privacy</a></li>
+				<li style="position:relative; left:30px;"><a style="color:rgba(117, 112, 112, 0.71)" href="#">Terms</a></li>
+			</ul>
+		</div>
+	</footer>
+</body>
 
-
-
-<!--ads-->
-
-        <div class="paidAds">
-            <div class="ad ads">  
-                <h1><a>Ecommerce Website Builder | Start a 14 Day Free Trial Now</a></h1>
-                <h2><span>Ad</span>www.shopify.com/‎</h2>
-                <p>Everything You Need To Start Selling Online Today. SEO Optimized.
-                 Mobile Commerce Ready. Unlimited 24/7 Support. SSL Certificate. 
-                 Full Blogging Platform. Fulfillment Integration. Fraud Prevention. 100+ Professional Themes. Social Media Integration.
-                </p>
-            </div>
-            <div class="ad ads">
-                <h1><a>5 Best Website Builders (2020) | Build Your Website in 3 Steps‎</a></h1>
-                <h2><span>Ad·</span>top5-websitebuilders.com/</h2>
-                <p>2020 User's Choice. Customizable Online Store. Drag & Drop Editor. Top Deals In One Place! It's Easy. 
-                    Customizable Templates. Mobile Optimized. Built-in SEO. Social Media Compatible. Free Hosting. 
-                    Design Flexibility. No Coding Needed. Price Comparison.</p>
-            </div>
-        </div>
-
-<!--those are the first 2 results-->
-        <div class="fisrt2Results"></div>
-            <div class="ad index">
-                <h1><a href="#">Create Your Website for Free | Free Site Builder | Website.com</a></h1>
-                <h2><span>https://www.website.com</span></h2>
-                <p>Create a professional website for free with the Website.com website builder. 
-                Domain names, web hosting, website templates, and ecommerce solutions...</p>
-            </div>
-            <div class="ad index">
-                <h1><a href="#">Webnode: Create a free website easily | Free website builder</a></h1>
-                <h2><span>https://www.webnode.com</span></h2>
-                <p>You can create and own your website for free for unlimited time. 
-                Make a website at Webnode in a matter of minutes!</p>
-            </div>
-        </div>
-
-<!--those are the 3 videos-->
-<div class="videoContainer">
-    <h3 class="subheading">Videos</h3>     
-    <div class="video">
-        <img src="pic/howto2.png" width="203px">
-        <h2><a href="#">How to Make a Website in 10 mins - Simple &amp; Easy</a></h2>
-        <div class="videoSample">
-
-        </div>
-        <h3>Website Learners</h3>
-        <h4>Youtube - Jan 3, 2018</h4>
-    </div>
-    <div class="video">
-        <img src="pic/wix.png" width="203px">
-        <h2><a href="#">How to Make a WEBSITE for FREE!</a></h2>
-        <div class="videoSample">
-
-        </div>
-        <h3>Blue Lightning Tv</h3>
-        <h4>Youtube - Nov 23, 2016</h4>
-    </div>
-    <div class="video">
-        <img src="pic/create.png" width="203px">
-        <h2><a href="#">
-                How To Create A Website For Beginners</a></h2>
-        <div class="videoSample">
-
-        </div>
-        <h3>Create WP Site</h3>
-        <h4>Youtube - Mar 19, 2016</h4>
-    </div>
-    <div class="button"></div>
-
-</div>
-
-<!--3 other result goes here-->  
-
-<div class="ad index">
-    <h1><a href="">Create Your Website for Free | Free Site Builder | Website.com</a></h1>
-    <h2><span>https://www.website.com</span></h2>
-    <p>Create a professional website for free with the Website.com website builder. 
-        Domain names, web hosting, website templates, and ecommerce solutions...</p>
-</div>
-<div class="ad index">
-    <h1><a href="">Webnode: Create a free website easily | Free website builder</a></h1>
-    <h2><span>https://www.webnode.com</span></h2>
-    <p>You can create and own your website for free for unlimited time. 
-        Make a website at Webnode in a matter of minutes!</p>
-</div>
-<div class="ad index">
-    <h1><a href="">Wix.com: Free Website Builder | Create a Free Website</a></h1>
-    <h2><span>https://www.wix.com</span></h2>
-    <p>Follow these 6 simple steps to create a website today. Sign up for a free website builder.
-         Choose what kind of website you want to create.
-          Customize a template or get a website made for you. Drag and drop 100s of design features.
-           Get ready for business. Publish your website and go live. Drive traffic to your site.</p>
-</div>
-
-<!--suggestions table-->
-
-<div class="suggestions">
-    <div class="containerSug">
-        <div class="sug no-bottom top"><h3 class="subheading">People also ask</h3></div>
-        
-        <div class="sug no-bottom ">How can I create a free website?
-            <span><a href="#"><img src="images/alsoaskdrop.png" width="20px"></a></span>
-        </div>
-        <div class="sug no-bottom">How do I create a free website on google?
-                <span><a href="#"><img src="images/alsoaskdrop.png" width="20px"></a></span>
-        </div>
-        <div class="sug no-bottom">How much does it cost to build a website
-                <span><a href="#"><img src="images/alsoaskdrop.png" width="20px"></a></span>
-        </div>
-        <div class="sug bottom">How to do I create website for my business
-                <span><a href="#"><img src="images/alsoaskdrop.png" width="20px"></a></span>
-        </div>
-    </div>
-</div>
-
-<!--4 more results-->
-<div class="ad index">
-    <h1><a href="">How to Create a Website: Step-by-Step Guide for Beginners (2019)</a></h1>
-    <h2><span>https://websitesetup.org</span></h2>
-    <p>Apr 25, 2019 - Learn how to make a website and set it up. This site contains
-         different tutorials on how to build a website using WordPress, Joomla, Drupal...</p>
-</div>
-<div class="ad index">
-    <h1><a href="">Create Your Website for Free | Free Site Builder | Website.com</a></h1>
-    <h2><span>https://www.website.com</span></h2>
-    <p>Create a professional website for free with the Website.com website builder. 
-        Domain names, web hosting, website templates, and ecommerce solutions...</p>
-</div>
-<div class="ad index">
-    <h1><a href="">Webnode: Create a free website easily | Free website builder</a></h1>
-    <h2><span>https://www.webnode.com</span></h2>
-    <p>You can create and own your website for free for unlimited time. 
-        Make a website at Webnode in a matter of minutes!</p>
-</div>
-<div class="ad index">
-    <h1><a href="">Wix.com: Free Website Builder | Create a Free Website</a></h1>
-    <h2><span>https://www.wix.com</span></h2>
-    <p>Follow these 6 simple steps to create a website today. Sign up for a free website builder.
-         Choose what kind of website you want to create.
-          Customize a template or get a website made for you. Drag and drop 100s of design features.
-           Get ready for business. Publish your website and go live. Drive traffic to your site.</p>
-</div>
-        
-<!--related search-->
-       
-
-<div class="rltSrch">
-    <h3>Related search</h3>
-    <h2>Top Website builder Software</h2>
-    <div class="relImg">
-        <img src="images/wordpress.png">
-        <br>
-        <a href="">Wordpress</a>
-    </div>
-    <div class="relImg">
-        <img src="images/weebly.png">
-        <br>
-        <a href="">Webly</a>
-    </div>
-    <div class="relImg">
-        <img src="images/shopify.png">
-        <br>
-        <a href="">Shopify</a>
-    </div>
-    <div class="relImg">
-        <img src="images/webnode.png">
-        <br>
-        <a href="">webnode</a>
-    </div>
-    <div class="relImg">
-        <img src="images/yola.png">
-        <br>
-        <a href="">Yola</a>
-    </div>
-    <div class="relImg">
-        <img width="72" src="images/jimdo.png">
-        <br>
-        <a href="#">Jimdo</a>
-    </div>
-</div>
-
-<div class="rltSrch">
-        <h3>Related search</h3>
-        <h2>Web design software name</h2>
-        <a class="more" href="#">View 3+ more</a>
-        <div class="relImg">
-            <img src="images/mobirise.png">
-            <br>
-            <a href="">Mobirise</a>
-        </div>
-        
-        <div class="relImg">
-            <img src="images/Googlewebdesigner.jpeg">
-            <br>
-            <a href="">Google Web Designer</a>
-        </div>
-        <div class="relImg">
-                <img src="images/Dreamweaver.png">
-                <br>
-                <a href="">Adobe Dreamw...</a>
-            </div>
-        
-        <div class="relImg">
-            <img src="images/Webnode.png">
-            <br>
-            <a href="">Webnode</a>
-        </div>
-    </div>
-
-
-    <div class="related">
-        <h3>Searches related to build this webpage</h3>
-        <div>
-            <div class="rel1">
-                <p><a href=""> how to create a website on google</a></p>
-                <p><a href="">how to create a website free of cost</a></p>
-                <p> <a href="">how to create a website pdf</a></p>
-                <p><a href="">how to create a website using html</a></p>
-            </div>
-            <div class="rel2">
-                <p><a href="">how to make your own website for free</a></p>
-                <p><a href="">creating a website for your business</a></p>
-                <p><a href="">create professional website</a></p>
-                <p><a href="">create free website an earn money</a></p>
-            </div>
-        </div>
-    </div>
-
-
-
-    <div class="nextPages">
-        <div class="bigG siblings">
-            
-        </div>
-        <div class="redO siblings">
-            <span class="pageNumber "><a href="#" class="active">1</a></span>
-            
-        </div>
-
-        <div class="yellowO siblings">
-            <span class="pageNumber"><a href="#">2</a></span>  
-        </div>
-
-        <div class="yellowO siblings">
-            <span class="pageNumber"><a href="#">3</a></span>
-        </div>
-
-        <div class="yellowO siblings">
-            <span class="pageNumber"><a href="#">4</a></span>
-        </div>
-        <div class="yellowO siblings">
-            <span class="pageNumber"><a href="#">5</a></span>
-        </div>
-        <div class="yellowO siblings">
-            <span class="pageNumber"><a href="#">6</a></span>
-        </div>
-        <div class="yellowO siblings">
-            <span class="pageNumber"><a href="#">7</a></span>         
-        </div>
-        <div class="yellowO siblings">
-            <span class="pageNumber"><a href="#">8</a></span>      
-        </div>
-        <div class="yellowO siblings">
-            <span class="pageNumber"><a href="#">9</a></span>
-        </div>
-        <div class="yellowO siblings">
-            <span class="pageNumber"><a href="#">10</a></span>  
-        </div>
-        <div class="gle siblings">
-                <span class="next"><a href="#">Next</a></span>     
-        </div>
-
-
-</div>
-     </main>
-
-
-
-         <footer>
-            <div class="topFooter">
-                    <span class="country">United Kingdom</span>
-                    <div class="location">
-                        <span></span>
-                        <span class="capital">London</span>
-                        <span>-</span>
-                        <a href="#">Learn more</a>
-                    </div>
-                </div>
-                <div class="bottomFooter">
-                    <ul>
-                        <li><a href="#">Help</a></li>
-                        <li><a href="#">Send Feedback</a></li>
-                        <li><a href="#">Privacy</a></li>
-                        <li><a href="#">Terms</a></li>
-                    </ul>
-                </div>
-         </footer>
-    </body>
-    </html>
-
-        
+</html>
