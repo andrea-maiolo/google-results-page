@@ -1,74 +1,18 @@
-/* Tablet Landscape*/margin-left:140px;
-@media screen and (max-width: 1060px) {
-	#primary {
-		width: 67%;
-	}
-
-	#secondary {
-		width: 30%;
-		margin-left: 3%;
-	}
-}
-
-/* Tabled Portrait */margin-left:140px;
-@media screen and (max-width: 768px) {
-	#primary {
-		width: 100%;
-	}
-
-	#secondary {
-		width: 100%;
-		margin: 0;
-		border: none;
-	}
-}
-
-img {
-	max-width: 100%;
-}
-
-@media (min-width: 640px) {
-	body {
-		font-size: 1rem;
-	}
-}
-
-@media (min-width:960px) {
-	body {
-		font-size: 1.2rem;
-	}
-}
-
-@media (min-width:1100px) {
-	body {
-		font-size: 1.5rem;
-	}
-} 
-@media (max-width:1300px){
-	body{
-		font-size:1rem;
-	}
-}
-
-html {
-	-webkit-appearance: none;
-    font-size: 100%;
-}
-
 li {
 	display: inline;
 	font-size: 13px;
-	;
+	color:#5F6368;
+	font-family: arial,sans-serif;
 }
 
 a:link {
 	text-decoration: none;
-	color: black;
+	color: #000000;
 }
 
 a:visited {
 	text-decoration: none;
-	color: black;
+	color: #000000;
 }
 
 a:hover {
@@ -81,68 +25,55 @@ a:active {
 
 #head {
     display: block;
-    height:100px;
-    border-bottom: solid 1px #c6c6c6;
+    height:115px;
+    border-bottom: solid 1px #ebebeb;
 }
 
 #logo {
-	width: 7%;
+	width: 7.2%;
 	display: block;
 	position: relative;
-	top: 15px;
-	left: 8px;
+	top: 20px;
+	left: 15px;
 }
 
 #searchbar {
-	text-align: center;
-	align-content: center;
 	display: flex;
 	border-radius: 24px;
-	border: 1px;
-	border-style: solid;
-	border-color: rgb(204, 201, 196);
-	width: 480px;
-	height: 44px;
-	box-shadow: none;
-	background: #fff;
+	border: 1px solid #ebebeb;
+	width: 500px;
+	height: 45px;
 	position: relative;
-	top: -22px;
-	left: 131px;
+	bottom:20px;
+	left: 151px;
 }
 
 #lens {
+	flex:1;
 	width: 20px;
 	height: 20px;
-	fill: rgb(179, 179, 179);
-	line-height: 20px;
-	margin-top: 10px;
+	fill: #002df7;
+	margin-top: 11px;
 	margin-left: 7px;
-	margin-right: 5px;
 }
 
 #form {
-	margin-top: 10px;
-	margin-left: 5px;
-	margin-right: 5px;
+	flex:3;
 }
 
 #searchText {
-	display: inline-block;
 	border: none;
-	color: rgba(0, 0, 0, .87);
 	outline: none;
 	font: 16px arial, sans-serif;
-	-webkit-tap-highlight-color: transparent;
-	background-color: transparent;
-	width: 388px;
+	width: 400px;
+	margin-top:11px;
 }
 
 #micro {
-	width: 24px;
-	height: 24px;
-	margin-top: 10px;
-	margin-left: 11px;
-	margin-right: 5px;
+	flex:1;
+	width: 23px;
+	height: 23px;
+	margin-top: 11px;
 }
 
 #apps {
@@ -905,4 +836,56 @@ a:active {
 
 #bottomList {
 	margin-left:100px
+}
+
+/* Tablet Landscape*/margin-left:140px;
+@media screen and (max-width: 1060px) {
+	#primary {
+		width: 67%;
+	}
+
+	#secondary {
+		width: 30%;
+		margin-left: 3%;
+	}
+}
+
+/* Tabled Portrait */margin-left:140px;
+@media screen and (max-width: 768px) {
+	#primary {
+		width: 100%;
+	}
+
+	#secondary {
+		width: 100%;
+		margin: 0;
+		border: none;
+	}
+}
+
+img {
+	max-width: 100%;
+}
+
+@media (min-width: 640px) {
+	body {
+		font-size: 1rem;
+	}
+}
+
+@media (min-width:960px) {
+	body {
+		font-size: 1.2rem;
+	}
+}
+
+@media (min-width:1100px) {
+	body {
+		font-size: 1.5rem;
+	}
+} 
+@media (max-width:1300px){
+	body{
+		font-size:1rem;
+	}
 }
